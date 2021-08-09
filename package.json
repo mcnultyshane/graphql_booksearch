@@ -23,5 +23,8 @@
   "homepage": "https://github.com/mcnultyshane/graphql_booksearch#readme",
   "dependencies": {
     "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1"
   }
 }

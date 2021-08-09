@@ -1,4 +1,4 @@
-const express = require('express')
+const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
 
@@ -21,7 +21,7 @@ const server = new ApolloServer({
 server.applyMiddleware({ app });
 
 // Express middleware for parsing
-app.use(express.urlendcoded({ extended: false}));
+app.use(express.urlencoded({ extended: false}));
 app.use(express.json());
 
 // if we're in production, serve client/build as static assets
