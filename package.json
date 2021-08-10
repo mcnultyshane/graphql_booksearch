@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/mcnultyshane/graphql_booksearch#readme",
   "dependencies": {
+    "apollo-server-express": "^2.25.2",
+    "dotenv": "^10.0.0",
     "react": "^17.0.2"
   },
   "devDependencies": {
