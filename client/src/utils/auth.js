@@ -21,9 +21,7 @@ class Authservice {
             const decoded = decode(token);
             if (decoded.exp < Date.now() / 1000) {
                 return true;
-
             } else return false;
-
         } catch (err) {
             return false;
         }
@@ -36,8 +34,13 @@ class Authservice {
 
     login(idToken) {
         // saves user token to localStorage
-        localStorage.removeItem('id_token');
+        localStorage.setItem('id_token', idToken);
         // this will reload the page and reset the state of the application
+        window.location.assign('/');
+    }
+
+    logout(){
+        localStorage.removeItem('id_token');
         window.location.assign('/');
     }
 }

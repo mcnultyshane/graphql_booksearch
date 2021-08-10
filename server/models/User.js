@@ -22,6 +22,8 @@ const userSchema = new Schema(
       required: true,
       minlength: 5,
     },
+    // set savedBooks to be an array of data that adhears to the bookSchema
+  
     savedBooks: [bookSchema],
   },
   {
