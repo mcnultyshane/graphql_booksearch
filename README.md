@@ -17,10 +17,7 @@
   - [Questions](Questions)
 
   ## Installation
-  To install necessary dependencies, run the following command:
-   ``` md
-   npm i
-   ```
+ 
   ## Usage
   A link to the deployed application can be found [here](https://booksearch--s.herokuapp.com/).
 
